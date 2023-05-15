@@ -248,6 +248,21 @@
   margin-bottom: 131px;
   font-variant-numeric: lining-nums;
  }
+ .go-up{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -18px;
+}
+.arrow__up{
+  transform: translate(0,0);
+  animation: up 2s infinite;
+}
+@keyframes up {
+  0% {transform: translateY(0);}
+  33% {transform: translateY(-5px);}
+  66% {transform: translateY(-10px);}
+  100% {transform: translateY(-15px);}
+}
   /* main styles*/
   /* footer styles*/
   .footer {
