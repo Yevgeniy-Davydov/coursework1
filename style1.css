@@ -1,4 +1,5 @@
  /*header styles*/
+
 .navigation {
     font-family: "Raleway-Regular";
     font-size: 16px;
@@ -30,6 +31,7 @@
 .call_item {
     text-decoration: none;
     color: black;
+    font-variant-numeric: lining-nums;
 }
 .accordion__input{
     display: none;
@@ -129,8 +131,8 @@
 .size__item {
   font-family: "Raleway-Light";
   font-size: 12px;
-  margin-top: px;
   opacity: 65%;
+  font-variant-numeric: lining-nums;
 }
 .size__box{
   margin-top: 11px;
@@ -202,6 +204,7 @@
  .card__cost{
   font-family: "Raleway-Bold";
   font-size: 14px;
+  font-variant-numeric: lining-nums;
  }
  .card__item:hover{
   transform: scale(1.1);
@@ -243,6 +246,7 @@
   align-items: center;
   margin-top: 45px;
   margin-bottom: 131px;
+  font-variant-numeric: lining-nums;
  }
   /* main styles*/
   /* footer styles*/
@@ -252,6 +256,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-variant-numeric: lining-nums;
   }
   .footer__p{
     font-family: "Raleway-Regular";
