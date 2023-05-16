@@ -30,6 +30,7 @@
 .call_item {
     text-decoration: none;
     color: black;
+    font-variant-numeric: lining-nums;
 }
 .accordion__input{
     display: none;
@@ -189,6 +190,7 @@
 }
 .size{
   display: flex;
+  font-variant-numeric: lining-nums;
 }
 .table__size{
   font-family: "Raleway-Regular";
@@ -204,7 +206,8 @@
 .price__p{
   font-family: "Raleway-Bold";
   font-size: 14px;
-  margin-top: 18px
+  margin-top: 18px;
+  font-variant-numeric: lining-nums;
 }
 .buy{
   font-family: "Raleway-Regular";
@@ -330,6 +333,7 @@
   font-family: "Raleway-Bold";
   font-size: 14px;
   margin-top: 22px;
+  font-variant-numeric: lining-nums;
 }
 .cost_lower{
   margin-top: 38px;
@@ -386,6 +390,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-variant-numeric: lining-nums;
   }
   .footer__p{
     font-family: "Raleway-Regular";
