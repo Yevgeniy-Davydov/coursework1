@@ -8,11 +8,46 @@
     магазин дизайнерських вишиванок ручної роботи та етнічного одягу">
     <title>Catalog</title>
     <link rel="stylesheet" href="style-fonts.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style1.css" media="all and (min-width: 801px)">
+    <link rel="stylesheet" href="style1-resp.css" media="all and (max-width: 800px)">
 </head>
 <body>
     <header>
-    <div class="header">
+        <div class="header_resp">
+            <div class="burger">
+                <label class="label">
+                    <input class="burger__input" type="checkbox" name="burger">
+                    <div class="navigation">
+                            <p><a class="navigation__item" href="#index1.html">Каталог</a></p>
+                            <p><a class="navigation__item" href="#index10.html">Знижки</a></p>
+                            <p><a class="navigation__item" href="#index11.html">Блог</a></p>
+                            <p><a class="navigation__item" href="#index12.html">Про нас</a></p>
+                    </div>
+                </label>
+            </div>
+           
+            <div class="logo_resp">
+                <a href="#index.html">
+                    <a name="up_resp"><img class="logo_main" src="img/etnodim-logo-main.png" alt="logo etnodim"></a>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="accordion_search">
+                    <label class="accordion">
+                        <input class="accordion__input" type="checkbox" name="checkbox-accordion-search">
+                        <div class="accordion__header_search"></div>
+                            <div class="accordion__content">
+                                <textarea cols="5" rows="1" placeholder="знайти"></textarea>
+                            </div>
+                        </label>
+                </div>
+                <div class="basket">
+                    <p></p><a class="basket__link" href="#index_basket.html"></a>
+                </div>
+               
+            </div>
+        </div>
+    <div class="header_norm">
         <div class="navigation">
           <p><a class="navigation__item" href="#index1.html">Каталог</a></p>
           <p><a class="navigation__item" href="#index10.html">Знижки</a></p>
@@ -21,7 +56,7 @@
         </div>
         <div class="logo">
             <a href="#index.html">
-                <a name="up"><img class="logo_main" src="img/etnodim-logo-main.png" alt="logo etnodim"></a>
+                <a name="up_norm"><img class="logo_main" src="img/etnodim-logo-main.png" alt="logo etnodim"></a>
             </a>
         </div>
         <div class="menu">
@@ -70,7 +105,172 @@
     </div>
     </header>
     <main>
-        <div class="main">
+        <div class="main_resp">
+            <div class="page_title">
+                <h1 class="title">Жіночі вишиванки</h1>
+                </div>
+
+            <section>
+                <div class="container">
+                    <div class="container_up"> 
+                        <div class="accordion_size">
+                            <label class="accordion">
+                                <input class="accordion__input" type="checkbox" name="checkbox-accordion-responsive">
+                                <div class="accordion__header">Фільтри</div>
+                                <div class="accordion__content">
+                                    <div class="accordion__container">
+                                        <div class="size__box bold">Розмір
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">32 | XXS (53)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">34 | XS (60)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">36 | S (60)</label> 
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">38 | M (60)</label> 
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">40 | L (60)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">42 | XL (58)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">46 | XXL (13)</label> 
+                                            </div>
+                                          <div>
+                                            <input type="checkbox">
+                                            <label class="size__item">48 | XХXL (4)</label>
+                                          </div>
+                                        </div>
+                                        <div class="size__box bold">Колір
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">білий</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">чорний</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">бежевий</label> 
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">зелений</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">синій</label> 
+                                            </div>
+                                        </div>
+                                        <div class="size__box bold">Сезон
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">Easy collection (3)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">Усі сезони (46)</label>
+                                            </div>
+                                        </div>
+                                        <div class="size__box bold">Тканина
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">Льон (60)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">Сатин (1)</label>
+                                            </div>
+                                        </div>
+                                        <div class="size__box bold">Рукав
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">Довгий рукав (49)</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label class="size__item">3/4 рукав (11)</label>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                    
+            
+                                </div>
+                                
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <p class="path__p_lighter">Сортувати за:</p>
+                            <p class="path__p_normal">новинки</p>
+                            <div class="arrow_filter"><img src="img/arrow-down.png" alt="arrow down"></div>
+                            </div>
+                    </div>
+                    <div class="cards_container">
+                        <div class="cards">
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 1_resp.png" alt="female short">
+                                <p class="card__p">Вишиванка з рослинним<br> орнаментом Lito</p>
+                                <p class="card__cost">2 800 грн.</p>
+                            </div>
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 47_resp.png" alt="female short">
+                                <p class="card__p">Вишиванка блакитного<br> кольору з рослинним <br>орнаментом Fialka</p>
+                                <p class="card__cost">3 400 грн.</p>
+                            </div>
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 7_resp.png" alt="female short">
+                                <p class="card__p">Лляна вишиванка з<br> геометричним орнаментом<br> Nezalezhni</p>
+                                <p class="card__cost">4 200 грн.</p>
+                            </div>
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 8_resp.png" alt="female short">
+                                <p class="card__p">Вишиванка з рослинним<br> орнаментом Kashtan</p>
+                                <p class="card__cost">3 800 грн.</p>
+                            </div>
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 9_resp.png" alt="female short">
+                                <p class="card__p">Легка блузка вільного <br>крою з орнаментом Indi</p>
+                                <p class="card__cost">3 800 грн.</p>
+                            </div>
+                            <div class="card__item">
+                                <img class="card__pic" src="img/image 10_resp.png" alt="female short">
+                                <p class="card__p">Біла вишиванка вільного<br> крою Svitanok</p>
+                                <p class="card__cost">2 980 грн.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="navigation_low">
+                        <div class="low__show-more">
+                            <a class="show-more__text" href="#more">Показати більше</a>
+                            <div>
+                                <a class="show-more__text" href="#more">
+                                    <img class="show-more__arrow" src="img/Arrow-more.png" alt="reload arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="go-up">
+                    <div><a class="link__up" href="#up_resp"><img class="arrow__up" src="img/Vector 20.png" alt="arrow up"></a></div>
+                </div>
+            </section>
+        </div>
+        <div class="main_norm">
             <section>
                 <div class="path">
                     <p class="path__p">Головна</p>
@@ -325,13 +525,13 @@
                     </div>
                 </div>
                 <div class="go-up">
-                    <div><a class="link__up" href="#up"><img class="arrow__up" src="img/Vector 20.png" alt="arrow up"></a></div>
+                    <div><a class="link__up" href="#up_norm"><img class="arrow__up" src="img/Vector 20.png" alt="arrow up"></a></div>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <div class="footer">
+        <div class="footer_norm">
             <div class="about">
                 <p class="footer__p">Про нас</p>
                 <p class="footer__p">Команда</p>
@@ -347,18 +547,20 @@
             <div class="contact">
                 <div class="logo__footer">
                     <img src="img/etnodim-logo-footer.png" alt="etnodim logo">
-                </div class="contact_p">
-                <p class="footer__p underline">Контакти</p>
-                <p class="footer__p">+38 097 888 92 92</p>
-                <p class="footer__p">Україна, м. Київ, вул. Верхній Вал 58/28
-                </p>
+                </div>
+                <div class="contact_p">
+                    <p class="footer__p underline">Контакти</p>
+                    <p class="footer__p">+38 097 888 92 92</p>
+                    <p class="footer__p">Україна, м. Київ, вул. Верхній Вал 58/28
+                    </p>
+                </div>
                 <div class="p__block">
                     <p class="footer__p">пн-пт 10:00-20:00
 
                     </p>
                     <p class="footer__p">сб-нд 11:00-19:00</p>  
                 </div>
-            </div>
+            </div> 
             <div class="madia">
                 <p class="footer__p underline">Соціальні мережі</p>
                 <div class="media__block">
@@ -391,7 +593,70 @@
                 <p class="footer__p">© «Етнодім» 2009-2021</p>
             </div>
         </div>
-
+        <div class="footer_resp">
+            <div class="logo__footer">
+                <div><img src="img/logo-footer_resp.png" alt="etnodim logo"></div>
+            </div> 
+            <div class="footer__container">
+                <div class="about">
+                    <p class="footer__p">Про нас</p>
+                    <p class="footer__p">Команда</p>
+                    <p class="footer__p">Блог</p>
+                    <p class="footer__p_red">Drabyna</p>
+                </div>
+                <div class="information">
+                    <p class="footer__p">Цікава інформація</p>
+                    <p class="footer__p">Вакансії</p>
+                    <p class="footer__p">Доставка та оплата</p>
+                    <p class="footer__p_red">Етнодім Маніфест</p>
+                </div>
+                <div class="madia">
+                    <p class="footer__p underline">Соціальні мережі</p>
+                    <div class="media__block">
+                        <div class="media__item">
+                            <a href="#facebook">
+                                <img src="img/fb-logo.png" alt="facebook logo">
+                            </a>
+                        </div>
+                        <div class="media__item">
+                            <a href="#youtube">
+                            <img src="img/yt-logo.png" alt="youtube logo">
+                            </a>
+                        </div>
+                        <div class="media__item">
+                            <a href="#email">
+                                <img src="img/mail-logo.png" alt="email logo">
+                            </a>
+                        </div>
+                        <div class="media__item">
+                            <a href="#pinterest">
+                                <img src="img/p-logo.png" alt="pinterest logo">
+                            </a>
+                        </div>
+                        <div class="media__item">
+                            <a href="#instagram">
+                                <img src="img/inst-logo.png" alt="instagram logo"> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact_p">
+                        <p class="footer__p underline">Контакти</p>
+                        <p class="footer__p">+38 097 888 92 92</p>
+                        <p class="footer__p">Україна, м. Київ, вул. Верхній Вал 58/28
+                        </p>
+                    </div>
+                    <div class="p__block">
+                        <p class="footer__p">пн-пт 10:00-20:00
+    
+                        </p>
+                        <p class="footer__p">сб-нд 11:00-19:00</p>  
+                    </div>
+                    <p class="footer__p">© «Етнодім» 2009-2021</p>
+                </div> 
+            </div>
+        </div>    
     </footer>
 </body>
 </html>

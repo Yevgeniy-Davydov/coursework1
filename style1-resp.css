@@ -1,0 +1,307 @@
+
+
+.header_norm{display: none;}
+.header_resp {display: block;}
+.main_norm {display: none;}
+.main_resp {display: block;}
+.footer_norm{display: none;}
+.footer_resp{display: block;}
+
+.label{
+    display: block;
+    position: fixed;
+    text-align: start;
+}
+.label::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-size: content;
+    background: url("img/burger.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    text-align: start;
+    top: 50px;
+    left: 20px;
+}
+.navigation{
+    display: none;
+}
+.burger__input{
+    display: none;
+}
+.burger__input:checked + .navigation {
+    display: block;  
+}
+.navigation {
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    min-width: 50px;
+    background-color: #F4F4F4;
+ 
+}
+.navigation__item {
+    text-decoration: none;
+    color: black;
+    padding-left: 32.5px; 
+}
+.logo {
+  max-width: 95px;
+  max-height: 25px;
+  margin-top: -50px;
+}
+.navigation__item:focus{
+    color: red;
+    font-family: "Raleway-Bold";
+}
+.menu{
+    display: flex;
+    margin-top: -20px;
+}
+.header_resp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 99px;
+    margin-top: 30px;
+}
+.accordion__header_search::after{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("img/ei_search.png");
+  background-repeat: no-repeat;
+  margin-left: 23px;
+  margin-right: 16px;
+}
+.basket__link::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("img/cart.png");
+  background-repeat: no-repeat;
+  margin-top: -14px;
+}
+/*header styles*/
+/*main styles*/
+.title{
+    font-family: "DelaGothicOne";
+    font-size: 18px; 
+    text-transform: uppercase;
+    margin-top: 22px
+   }
+.page_title{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+/*filter-accordion styles*/
+.bold {
+  font-size: 12px;
+  font-family: "Raleway-Bold";
+  margin-top: 20px;
+}
+.size__item {
+  font-family: "Raleway-Light";
+  font-size: 12px;
+  opacity: 65%;
+  font-variant-numeric: lining-nums;
+}
+.accordion__input{
+    display: none;
+    position: relative;
+}
+.accordion__content {
+        display: none;
+    }
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+  
+}
+.accordion__container{
+    transform: translate3d(0px,0px,500px);
+    background-color: #FFFFFF;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    z-index: 5; 
+  }
+.accordion__header {
+    display: flex;
+    font-family: "Raleway-Light";
+    font-size: 12px;
+}
+.accordion__header::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 8px;
+    background-size: content;
+    background: url("img/arrow-down.png");
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-right: 25px;
+    transition: transform 400ms linear;
+}
+.accordion__input:checked + .accordion__header::after {
+    transform: rotate(180deg);
+    transition: transform 400ms linear;
+    margin-top: 1px;
+  }
+  
+/*filter_accordion styles*/
+
+   .container_up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .filter{
+    display: flex;
+   }
+   
+   .arrow_filter{
+    margin-left: 5px;
+    margin-top: 7px;
+   }
+   .path__p_lighter{
+    font-family: "Raleway-Light";
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 3px;
+  }
+  .path__p_normal {
+    font-family: "Raleway-Light";
+    font-size: 12px;
+}
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+   .cards {
+    display: flex;
+    flex-wrap: wrap;
+   
+   }
+   .card__item{
+    width: 167px;
+    height: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .card__pic {
+    width: 167px;
+    height: 200px;
+   }
+   .card__p{
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    opacity: 70%;
+    margin-top: 8px;
+   }
+   .card__cost{
+    font-family: "Raleway-Bold";
+    font-size: 14px;
+    font-variant-numeric: lining-nums;
+    justify-self: flex-end;
+   }
+   .card__item:hover{
+    transform: scale(1.1);
+   }
+   /*navigation-low styles*/
+   .show-more__text {
+    font-family: "Raleway-SemiBold";
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-right: 7px;
+   }
+   .low__show-more{
+    display: flex;
+   }
+   .navigation_low{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 131px;
+   }
+   .go-up{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -18px;
+  }
+  .arrow__up{
+    transform: translate(0,0);
+    animation: up 2s infinite;
+  }
+  @keyframes up {
+    0% {transform: translateY(0);}
+    33% {transform: translateY(-5px);}
+    66% {transform: translateY(-10px);}
+    100% {transform: translateY(-15px);}
+  }
+  /* footer styles*/
+  .footer_resp {
+    background-color: #F4F4F4;
+    font-variant-numeric: lining-nums;
+  }
+  .logo__footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer__p{
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    opacity: 70%;
+  }
+  .underline{
+    text-decoration: underline;
+  }
+  .footer__p_red{
+    font-family: "Raleway-Bold";
+    font-size: 14px;
+    color: #DA1F39;
+  }
+  .p__block{
+    display: flex;
+    gap: 22px;
+  }
+  .media__block{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 14px;
+    max-width: 114px;
+  }
+ .about{
+    margin-top: 60px;
+    line-height: 23.27px;
+    margin-right: 36px;
+  }
+  .information{
+    margin-top: 60px;
+    line-height: 23.27px;
+    margin-right: 18px;
+  }
+  .madia{
+    margin-top: 60px;
+    line-height: 23.27px;
+   
+  }
+  .contact_p{
+    line-height: 23.27px;
+  }
+  .footer__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
